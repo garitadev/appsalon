@@ -1,0 +1,26 @@
+.paginacion{
+    display: flex;
+    justify-content: space-between;//coloca los elementoos uno del lado izw y otro de derecho
+    padding: $separacion 0;
+
+    button{
+        background-color: $azul;
+        padding: 1rem 3rem; //1 up& down || 3 left & rigth
+        display: block;//para que tome todo el ancho disponible, o sea uno sobre otro
+        text-align: center;
+        color: $blanco;
+        border: none;
+        font-weight: $bold;
+        font-size: 2rem;
+        text-transform: uppercase;
+
+        &.ocultar{
+           // display: none;//si se usa esta propiedad alterará la posicion del btn por lo que se usa visibi
+           visibility: hidden; // oculta el btn pero mantiene su posicion
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}

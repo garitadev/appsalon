@@ -1,0 +1,32 @@
+.formulario{
+    width: 100%;
+}
+
+.campo{
+    display: flex;
+    align-items: center;//centra verticalmete mientras no se le cambie la dirreccion
+    margin-bottom: 2rem;
+    label{
+        
+        flex: 0 0 10rem;//factor de crecimiento =0 y 10rem es el tamaño que se le da
+        color: $blanco;
+        
+    }
+    input{
+        flex: 1;//cantidad de pixeles que se le da a cada elemento de todo el tamaño disponible
+        padding: 1rem;
+        padding: $separacion/4;
+        border-radius: 1rem;
+        border: none;
+    }
+}
+
+.alerta{
+    padding: $separacion/2;
+    text-align: center;
+    color: $blanco;
+    display: block;//para asegurarnos que este abajo de otro elemento
+    &.error{
+        background-color: rgb(194, 0, 0, );
+    }
+}

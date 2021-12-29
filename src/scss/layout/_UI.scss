@@ -1,0 +1,36 @@
+body{
+    background-color: $negro;
+}
+
+.contenedor-estetica{
+    
+    @include tablet{
+        height: 100vh;//hace que el elemento tome toda la venta grafica y no se vea limitado por el contenido
+        @include grid(2, $separacion/2);
+    }
+    
+    .imagen{
+        height: 30rem;//limita la ing a ese tamaño en disp moviles
+        background-image: url(../img/1.jpg);
+        background-size: cover;//permite que las imagenes se vean centradas y se adapte
+        background-position: center center;
+        @include tablet{
+            height: auto;
+        }
+    }
+}
+.app{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: $separacion/2;
+
+    .seccion{
+        display: none;//hace que se oculten todos
+        margin-top: $separacion/2;
+       
+    }
+}
+
+.mostrar-seccion{
+    display: block!important;
+}
